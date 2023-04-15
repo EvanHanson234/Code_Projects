@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Higher - Lower</h1>
+<p>Guess a number between 1 and <span id="maxNumber"></span></p>
+<input type="number" id="guess" min="1" max=`${maxNumber}`>
+<button id="submit" onclick="checkGuess()">Submit</button>
+
+<p id="result"></p>
+<p id="error"></p>
+<p id="win"></p>
+
+<script src="higher-lower.js"></script>
+
+</body>
+</html>

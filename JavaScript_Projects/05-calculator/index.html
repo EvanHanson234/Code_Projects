@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Calculator</h1>
+
+        <div id="container">
+            <div id="display">
+                <p id="display"></p>
+            </div>
+
+            <div id="operators">
+                <button id="add" onclick="add()">+</button>
+                <button id="subtract" onclick="subtract()">-</button>
+                <button id="multiply" onclick="multiply()">*</button>
+                <button id="divide" onclick="divide()">/</button>
+            </div>
+
+            <div id="numbers">
+                <div id="thirdThree">
+                    <button id="seven">7</button>
+                    <button id="eight">8</button>
+                    <button id="nine">9</button>
+                    <button id="equals">=</button>
+                </div>
+                <div id="secondThree">
+                    <button id="four">4</button>
+                    <button id="five">5</button>
+                    <button id="six">6</button>
+                </div>
+                <div id="firstThree">
+                    <button id="one">1</button>
+                    <button id="two">2</button>
+                    <button id="three">3</button>
+                </div>
+                <div id="special">
+                    <button id="zero">0</button>
+                    <button id="period">.</button>
+                    <button id="clear" onclick="clear()">C</button>
+                </div>
+            </div>
+
+            <div id="spacer"></div>
+        </div>
+
+        <p id="footer">Copyright © 2023 Evan Hanson</p>
+
+        <script src="calculator.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  background-color: #353535;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #d9d9d9;
+  font-size: 3em;
+}
+
+div#container {
+  margin-top: 30px;
+  width: 400px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#display {
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #6d6875;
+  display: flex;
+  justify-content: center;
+}
+
+div#operators {
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #6d6875;
+  display: flex;
+  justify-content: center;
+}
+
+button#add, button#subtract, button#multiply, button#divide {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #6d6875;
+  color: #d9d9d9;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+div#numbers {
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #6d6875;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button#zero, button#period, button#clear, button#one, button#two, button#three, button#four, button#five, button#six, button#seven, button#eight, button#nine, button#zero {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #6d6875;
+  color: #d9d9d9;
+  font-size: 1.5em;
+  margin: 2px;
+}
+
+button#equals {
+  width: 75px;
+  height: 167px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #6d6875;
+  color: #d9d9d9;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+div#spacer {
+  width: 100%;
+  height: 20px;
+}
+
+p#footer {
+  margin-top: 100px;
+  color: #d9d9d9;
+  font-size: 1em;
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff6262;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
