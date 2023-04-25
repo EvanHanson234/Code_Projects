@@ -1,0 +1,29 @@
+<MyGrid>:
+    spacing: 1
+    canvas.before:
+        Color:
+            rgba: 0.2, 0.2, 0.2, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    Button:
+        text: ''
+        disabled: True
+        background_color: 0, 0, 0, 0
+        background_normal: ''
+        canvas.before:
+            Color:
+                rgba: 0.4, 0.4, 0.4, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+    Button:
+        text: 'Jan'
+        disabled: True
+        background_color: 0.3, 0.3, 0.3, 1
+
+    # Add styles for the other month labels and day labels here
+
+    # Add styles for the rating buttons here
