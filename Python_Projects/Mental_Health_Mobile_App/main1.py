@@ -1,31 +1,38 @@
-import calendar
+import kivy
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
-from kivy.uix.label import Label
 from kivy.uix.button import Button
-from kivy.uix.textinput import TextInput
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.label import Label
 from kivy.core.window import Window
 
-from kivy.lang import Builder
-Builder.load_file('style.kv')
 
 class MyGrid(GridLayout):
     def __init__(self, **kwargs):
         super(MyGrid, self).__init__(**kwargs)
-        self.cols = 32
-        self.rows = 13
+        self.cols = 13
+        self.rows = 32
         self.spacing = 1
-
+        
         # Add month labels to the top of the grid
         self.add_widget(Button(text=""))
-        for month in range(1, 13):
-            self.add_widget(Button(text=calendar.month_abbr[month]))
-
+        self.add_widget(Button(text="Jan"))
+        self.add_widget(Button(text="Feb"))
+        self.add_widget(Button(text="Mar"))
+        self.add_widget(Button(text="Apr"))
+        self.add_widget(Button(text="May"))
+        self.add_widget(Button(text="Jun"))
+        self.add_widget(Button(text="Jul"))
+        self.add_widget(Button(text="Aug"))
+        self.add_widget(Button(text="Sep"))
+        self.add_widget(Button(text="Oct"))
+        self.add_widget(Button(text="Nov"))
+        self.add_widget(Button(text="Dec"))
+        
         # Add day labels to the left of the grid
         for day in range(1, 32):
             self.add_widget(Button(text=str(day)))
-
+            
             # Add rating buttons for each day of the year
             for month in range(1, 13):
                 rating_btn = Button(text="", background_color=(0, 0, 0, 0), background_normal="")
@@ -46,6 +53,14 @@ class MyBox(BoxLayout):
         self.padding = 100
         self.spacing = 100
         self.add_widget(MyGrid())
+
+        # create a label for the title
+        title_label = Label(text="My App Title", font_size=40)
+        self.add_widget(title_label)
+
+        # create a label for the text
+        text_label = Label(text="This is some text that explains what my app does.", font_size=20)
+        self.add_widget(text_label)
 
 class MyApp(App):
     def build(self):
