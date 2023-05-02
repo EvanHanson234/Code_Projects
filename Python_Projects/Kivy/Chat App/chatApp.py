@@ -6,7 +6,10 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.core.window import Window
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.clock import Clock
+import socket_client
 import os
+import sys
 
 
 # Title Screen
@@ -60,8 +63,27 @@ class ConnectPage(GridLayout):
         with open(f"prev_details.txt", "w") as f:
             f.write(f"{ip},{port},{username}")
 
-        info = f"Joining {ip}:{port} as {username}"
+        info = f"Attempting to join {ip}:{port} as {username}"
         chat_app.info_page.update_info(info)
+        chat_app.screen_manager.current = "Info"
+        Clock.schedule_once(self.connect, 1)
+
+    def connect(self, _):
+        ip = self.ip.text
+        port = self.port.text
+        username = self.username.text
+
+        if not socket_client.connect(ip, port, username, show_error):
+            return
+
+        # Info Screen
+        info = f"Connected to {ip}:{port} as {username}"
+        chat_app.info_page.update_info(info)
+        chat_app.screen_manager.current = "Info"
+
+        # Chat Screen
+        chat_app.create_chat_page()
+        chat_app.screen_manager.current = "Chat"
         
 
 # Info Screen
@@ -92,6 +114,15 @@ class InfoPage(GridLayout):
         self.parent.current = "Connect"
 
 
+class ChatPage(GridLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.cols = 1
+        self.add_widget(Label(text="Hey there!"))
+        self.add_widget(Label(text="This is a chat app!"))
+        self.add_widget(Label(text="You can chat with your friends!"))
+
+
 class EpicApp(App):
     def build(self):
         # Adding a title screen to the app
@@ -108,6 +139,17 @@ class EpicApp(App):
         self.screen_manager.add_widget(screen)
 
         return self.screen_manager
+    
+    def create_chat_page(self):
+        self.chat_page = ChatPage()
+        screen = Screen(name="Chat")
+        screen.add_widget(self.chat_page)
+        self.screen_manager.add_widget(screen)
+
+def show_error(message):
+    chat_app.info_page.update_info(message)
+    chat_app.screen_manager.current = "Info"
+    Clock.schedule_once(sys.exit, 10)
     
 # Run the app
 if __name__ == '__main__':
