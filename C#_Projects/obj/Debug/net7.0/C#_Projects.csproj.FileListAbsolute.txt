@@ -1,0 +1,15 @@
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/bin/Debug/net7.0/C#_Projects
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/bin/Debug/net7.0/C#_Projects.deps.json
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/bin/Debug/net7.0/C#_Projects.runtimeconfig.json
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/bin/Debug/net7.0/C#_Projects.dll
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/bin/Debug/net7.0/C#_Projects.pdb
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.csproj.AssemblyReference.cache
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.AssemblyInfoInputs.cache
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.AssemblyInfo.cs
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.csproj.CoreCompileInputs.cache
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.dll
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/refint/C#_Projects.dll
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.pdb
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/C#_Projects.genruntimeconfig.cache
+/Users/evanhanson/Documents/GitHub/Code_Projects/C#_Projects/obj/Debug/net7.0/ref/C#_Projects.dll
