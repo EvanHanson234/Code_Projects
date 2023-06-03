@@ -10,7 +10,7 @@ valid = False
 while valid == False:
 	howMany = input("How many dice do you want to roll? Enter a number 1 to 6: ")
 
-	if (howMany != "g" or howMany != "2" or howMany != "3" or 
+	if (howMany != "1" or howMany != "2" or howMany != "3" or 
 		howMany != "4" or howMany != "5" or howMany != "6"):
 		print("That was not a valid input value! Please try again.")
 	else:
