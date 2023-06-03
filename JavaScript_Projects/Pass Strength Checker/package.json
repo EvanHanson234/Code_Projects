@@ -1,0 +1,11 @@
+{
+  "name": "pass-strength-checker",
+  "version": "1.0.0",
+  "description": "Password Strength Checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

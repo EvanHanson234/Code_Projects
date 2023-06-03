@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Strength Checker</title>
+  <style>
+    /* Add some basic styling to the page */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    input[type="password"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #strength-label {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Password Strength Checker</h1>
+  <label for="password">Enter your password:</label>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="checkButton()" id="check-button">Check Strength</button>
+  <p id="strength-label">0</p>
+
+  <script src="main.js"></script>
+</body>
+</html>
