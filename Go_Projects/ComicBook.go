@@ -1,3 +1,9 @@
+/* Evan Hanson
+* 06/13/2023
+* ComicBook.go
+* This program will print out the information of two comic books
+*/
+
 package main
 
 import "fmt"
