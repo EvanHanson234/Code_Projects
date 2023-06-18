@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>What are we cookin?</title>
+  <title>What are we cookin'?</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 </head>
 <body>
   <header>
-    <h1>What are we cookin?</h1>
+    <h1>what are we cookin'?</h1>
+    <div class="search-container">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <input type="text" placeholder="Search" class="search-input">
+      </div>      
   </header>
-  
-  <div class="container">
-    <nav>
-      <ul>
+
+  <!-- Hamburger Menu Start -->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
         <li><a href="#apps">Apps</a></li>
         <li><a href="#mains">Mains</a></li>
         <li><a href="#sides">Sides</a></li>
         <li><a href="#desserts">Desserts</a></li>
         <li><a href="#drinks">Drinks</a></li>
       </ul>
-    </nav>
-    
+    </div>
+  </nav>
+  <!-- Hamburger Menu End -->
+  
+  <div class="container">
     <section id="apps">
       <h2>Apps</h2>
       <div class="recipe-list">
-        <div class="recipe">Recipe 1</div>
-        <div class="recipe">Recipe 2</div>
-        <div class="recipe">Recipe 3</div>
-        <div class="recipe">Recipe 1</div>
-        <div class="recipe">Recipe 2</div>
-        <div class="recipe">Recipe 3</div>
-        <div class="recipe">Recipe 1</div>
-        <div class="recipe">Recipe 2</div>
-        <div class="recipe">Recipe 3</div>
-        <div class="recipe">Recipe 1</div>
+        <div class="recipe"><img src="images/food1.jpg" alt="Recipe 1" class="recipe-image">Recipe 1</div>
+        <div class="recipe"><img src="images/food2.jpg" alt="Recipe 2" class="recipe-image">Recipe 2</div>
+        <div class="recipe"><img src="images/food3.jpg" alt="Recipe 3" class="recipe-image">Recipe 3</div>
+        <div class="recipe"><img src="images/food4.jpg" alt="Recipe 4" class="recipe-image">Recipe 4</div>
+        <div class="recipe"><img src="images/food5.jpg" alt="Recipe 5" class="recipe-image">Recipe 5</div>
+        <div class="recipe"><img src="images/food6.jpg" alt="Recipe 6" class="recipe-image">Recipe 6</div>
+        <div class="recipe"><img src="images/food7.jpg" alt="Recipe 7" class="recipe-image">Recipe 7</div>
+        <div class="recipe">Recipe 8</div>
+        <div class="recipe">Recipe 9</div>
+        <div class="recipe">Recipe 10</div>
         <div class="recipe">Recipe 2</div>
         <div class="recipe">Recipe 3</div>
         <div class="recipe">Recipe 1</div>
@@ -51,34 +83,37 @@
     <section id="mains">
       <h2>Mains</h2>
       <div class="recipe-list">
-        <div class="recipe">Recipe 1</div>
+        <div class="recipe"><img src="images/food1.jpg" alt="Recipe 1" class="recipe-image">Recipe 1</div>
         <div class="recipe">Recipe 2</div>
         <div class="recipe">Recipe 3</div>
       </div>
     </section>
+    <hr>
     
     <section id="sides">
       <h2>Sides</h2>
       <div class="recipe-list">
-        <div class="recipe">Recipe 1</div>
+        <div class="recipe"><img src="images/food1.jpg" alt="Recipe 1" class="recipe-image">Recipe 1</div>
         <div class="recipe">Recipe 2</div>
         <div class="recipe">Recipe 3</div>
       </div>
     </section>
+    <hr>
     
     <section id="desserts">
       <h2>Desserts</h2>
       <div class="recipe-list">
-        <div class="recipe">Recipe 1</div>
+        <div class="recipe"><img src="images/food1.jpg" alt="Recipe 1" class="recipe-image">Recipe 1</div>
         <div class="recipe">Recipe 2</div>
         <div class="recipe">Recipe 3</div>
       </div>
     </section>
+    <hr>
     
     <section id="drinks">
       <h2>Drinks</h2>
       <div class="recipe-list">
-        <div class="recipe">Recipe 1</div>
+        <div class="recipe"><img src="images/food1.jpg" alt="Recipe 1" class="recipe-image">Recipe 1</div>
         <div class="recipe">Recipe 2</div>
         <div class="recipe">Recipe 3</div>
       </div>
